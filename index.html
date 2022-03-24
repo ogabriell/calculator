@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js"></script>
+    <title>Calculator</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="calc">
+        <div class="row">
+            <div class="visor">
+                <div class="account" id="account"></div>
+                <div class="result" id="result"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <button value="c" onclick="clearFields(1)">C</button>
+                <button value="ac" onclick="clearFields(2)">AC</button>
+                <button value="percent" onclick="getNumber('%')">%</button>
+                <button value="division" onclick="getNumber('÷')">÷</button>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <button value="7" id="7" onclick="getNumber(7)">7</button>
+                <button value="8" id="8" onclick="getNumber(8)">8</button>
+                <button value="9" id="9" onclick="getNumber(9)">9</button>
+                <button value="times" onclick="getNumber('x')">x</button>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <button value="4" id="4" onclick="getNumber(4)">4</button>
+                <button value="5" id="5" onclick="getNumber(5)">5</button>
+                <button value="6" id="6" onclick="getNumber(6)">6</button>
+                <button value="minus" onclick="getNumber('-')">-</button>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <button value="1" id="1" onclick="getNumber(1)">1</button>
+                <button value="2" id="2" onclick="getNumber(2)">2</button>
+                <button value="3" id="3" onclick="getNumber(3)">3</button>
+                <button onclick="getNumber('+')">+</button>
+            </div>
+        <div class="row">
+            <div>
+                <button value="+/-" onclick="getNumber('-')">+/-</button>
+                <button value="0" id="0" onclick="getNumber(0)">0</button>
+                <button value="point" onclick="getNumber('.')">.</button>
+                <button value="equal" onclick="equal()">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
