@@ -28,7 +28,7 @@ button:hover{
     left:50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    width: 17.1rem;
+    width: 17.3rem;
     height: 25rem;
     user-select: none;
 }
